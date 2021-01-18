@@ -194,7 +194,7 @@
 				
 		        return projection([d.lng,d.lat])[1];
 	      	})
-	      	.attr("r",width/350)
+	      	.attr("r",width/375)
 	      	.attr("fill",function(d){
 				if(d.color=="Blue")
 					return "#037bc1";
@@ -224,7 +224,7 @@
 					.duration(250)
 					.style("opacity", 1);
 
-				var htmlText = "<b>" + d.data.Country + "</b><br><span class='description'>" + d.data.Description + "</span><br><i class='linkName'>Click to access country page</i>"//+" (" + "<b>" + d.data.ISO3 + ")</b><Br/>Lat:" + d.data.lat + "</b><Br/>Lon:" + d.data.lng;
+				var htmlText = "<b>" + d.data.Country + "</b><br><br><span class='description'><b>" + d.data.Description +"</b><br> <i>Principle</i>: " + d.data.Principle + "</span><br><br><i class='linkName'>Click to access country page</i>"//+" (" + "<b>" + d.data.ISO3 + ")</b><Br/>Lat:" + d.data.lat + "</b><Br/>Lon:" + d.data.lng;
 				
 				var fromTop= parseFloat(element.attr('cy')) +30
 
@@ -302,7 +302,7 @@
 
 				return projection([d.lng, d.lat])[1];
 			})
-	      	.attr("r",width/300);
+	      	.attr("r",width/375);
 
 		
 		//	  voronoiLayer.selectAll(".cell").remove();
